@@ -1,5 +1,5 @@
 import { Link, useNavigate, useRouteError } from "react-router-dom";
-
+import Timer from "../actions/redirect";
 //library
 import { HomeIcon,ArrowUturnLeftIcon } from "@heroicons/react/24/solid";
 const Error = () => {
@@ -8,6 +8,7 @@ const Error = () => {
     return ( 
         <div className="error">
             <h1>uh oh! we've got a problem. </h1>
+            <Timer redirectPath="/other-page" durationInSeconds={3} />
             <p>{error.message || error.statusText}</p>
             <div className="flex-md">
                 <button className="btn btn--dark" onClick={()=> navigate(-1)}>
