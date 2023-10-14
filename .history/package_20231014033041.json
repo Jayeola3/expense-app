@@ -1,7 +1,8 @@
 {
-  "name": "expense-app",
+  "name": "",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jayeola3.github.io/expense-app",
   "dependencies": {
     "@heroicons/react": "^2.0.17",
     "@testing-library/jest-dom": "^5.16.5",
